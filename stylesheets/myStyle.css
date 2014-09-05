@@ -1,0 +1,62 @@
+body{background:url('../images/bg-body.jpg') repeat;max-width:1200px;margin:0 auto;font:16px/1.5 "IM FELL Great Primer", "Helvetica Neue",Helvetica,Arial,sans-serif;color:#7c7168;overflow-x:hidden;}
+header[role="player"]{position:absolute;top:40px;width:336px;bottom:40px;height:100%;text-align:center; }
+header[role="player"] h1{background:url('../images/logo2.png') repeat;width:259px;height:308px;margin:0 auto 20px;}
+h1{text-transform:uppercase;}
+#music_player{height:166px;background:url('../images/music-player-bg2.png') no-repeat center top;text-transform:uppercase;}
+.mp_controls{height:75px;line-height:75px;margin-bottom:24px;}
+.mp_controls > div{background:url('../images/sprite-musicplayer.png') no-repeat -135px 0;height:27px;width:27px;display:inline-block;cursor:pointer;vertical-align:middle;position:relative;}
+.mp_controls .mp_previous{margin-right:12px;}
+.mp_controls .mp_next{margin-left:12px;}
+.mp_controls .mp_play,.mp_controls .mp_pause{background-position:-98px 0;height:37px;width:37px;}
+.mp_controls .mp_previous:after,.mp_controls .mp_next:after{content:'';display:block;background:url(../images/sprite-musicplayer.png) -162px 0 no-repeat;position:absolute;width:8px;height:11px;
+	opacity:.5;top:50%;left:50%;margin-left:-4px;margin-top:-5.5px;}
+.mp_controls .mp_next:after{background-position:-162px -11px;}
+.mp_controls .mp_previous:hover:after,.mp_controls .mp_next:hover:after{opacity:1;}
+.mp_controls .mp_play:after,.mp_controls .mp_pause:after{content:'';width:23px;height:12px;position:absolute;left:50%;top:50%;margin-left:-11px;margin-top:-6px;display:block;background:url(../images/sprite-musicplayer.png) -135px -27px no-repeat;opacity:.75}
+.mp_controls .mp_pause:after{background-position:-163px 0;}
+.mp_controls .mp_play:hover:after,.mp_controls .mp_pause:hover:after{opacity:1}
+#music_player p,.vcard p{font-size:11px;font-style: italic;}
+#music_list li{color:#36897b;font-size:24px;font-family:"BebasNeueRegular";position:absolute;width:100%;
+	transition:.5s linear all;-webkit-transition:.5s linear all;opacity:0;}
+#music_list .current{opacity:1;}
+.vcard{text-transform:uppercase;margin-top:40px;}
+.vcard span{background:url(../images/vcard-email-bg.png) center center no-repeat;display:block;margin-top:8px;height:28px;}
+
+section[role="main"]{width:740px;float:right;overflow:visible;}
+.recard_box{min-height:516px;margin:40px 0;}
+.recard_box img{position:absolute;top:50%;left:50%;margin-top:-258px;margin-left:-258px;}
+
+ hgroup{background:url('../images/bg-body.jpg') repeat;position:absolute;width:175px;height:175px;left:50%;top:50%;margin-top:-87.5px;margin-left:-87.5px;cursor:pointer;border-radius:300px;box-shadow:inset 0 0 3px rgba(0,0,0,.75)}
+ hgroup .button_area{background:url('../images/sprite-download-album.png') no-repeat; cursor:pointer;position:absolute;left:50%;top:50%;}
+ hgroup .footer_area{background:url('../images/sprite-tothetop.png') no-repeat; cursor:pointer;position:absolute;left:50%;top:50%;}
+ hgroup .button{background-position:0 -171px;width:88px;height:73px;margin-left:-44px;margin-top:-36.5px;transition:.35s linear opacity;z-index:3}
+ hgroup .bground{background-position:-171px 0;width:151px;height:151px;margin-left:-75.5px;margin-top:-75.5px;}
+ hgroup .arrow{background-position:-87px -172px;width:73px;height:85px;margin-left:-36.5px;margin-top:-42.5px;opacity:.25;transition:.35s linear opacity;z-index:4}
+ hgroup:hover .button{opacity:0;}
+ hgroup:hover .arrow{opacity:1;}
+
+.band_box h1{width:496px;height:330px;margin-left:200px;background:url(../images/sprite-headers.png) no-repeat;margin-bottom:24px}
+.band_box p{-webkit-transform:rotate(-2deg);width:300px;margin-left:290px;font-size:24px;margin-bottom:24px;}
+.band_box img{position:absolute;left:0px;top:90px;-webkit-transform:rotate(15deg)}
+.band_box img + img {left:610px;top:270px;-webkit-transform:rotate(-15deg)}
+
+.lyrics_box {margin-bottom:100px;}
+.lyrics_box h1{width:496px;height:170px;margin-left:-70px;background:url(../images/sprite-headers.png) no-repeat 0 -330px;margin-bottom:24px}
+.lyrics_box ul > li{width:45%;float:left;}
+.lyrics_box ul > li + li{float:right}
+.lyrics_box .play{width:35px;height:35px;margin:0 auto 12px;border:1px solid #c3bfba;color:#c3bfba;-webkit-border-radius:100px;text-align:center;font-family:"BebasNeueRegular";font-size:24px;line-height:38px;cursor:pointer;position:relative;}
+.lyrics_box .play:hover,.lyrics_box .playing{border-color:transparent;background:#dc4b24;text-indent:-9999px;}
+.lyrics_box .play:hover:after,.lyrics_box .playing:after{content:"";display:block;background:url('../images/sprite-musicplayer.png') -135px -39px no-repeat;width:23px;height:12px;position:relative;left:50%;top:50%;margin-left:-11px;margin-top:-44px;opacity:.75;}
+.lyrics_box .playing:after{background-position:-170px -22px;margin-left:-4px;}
+.lyrics_box header h2{color:#36897b;font-size:26px;font-family:"BebasNeueRegular";text-align:center;margin-bottom:12px;}
+.lyrics_box p{font:13px/2 "IM FELL Great Primer";margin-bottom:24px;}
+.photo{-webkit-box-shadow:-4px 4px 0 rgba(0,0,0,.15)}
+.band5{-webkit-transform:rotate(-6deg);margin:-28px 0 12px -48px;}
+.band6{-webkit-transform:rotate(2deg);margin:-28px 0 12px -48px;}
+.band4{-webkit-transform:rotate(4deg);margin:-8px 0 12px -48px;}
+
+footer[role="footer"]{height:436px;background:url('../images/footer-bg.png') center bottom no-repeat;width:1200px;margin-left:-260px;margin-bottom:40px;position:relative}
+footer[role="footer"] hgroup{box-shadow:inset 0 0 0 rgba(0,0,0,.75)}
+footer[role="footer"] .bground{background-position:0 0;width:100%;height:100%;margin:0;left:0;top:0;}
+footer[role="footer"] .button{background-position:0 -171px;width:30px;height:68px;margin-left:-15px;margin-top:-34px;}
+footer[role="footer"] .arrow{background-position:-30px -171px;}
